@@ -1,0 +1,9 @@
+name: hello-test
+on:
+  push:
+    branches: [main]
+jobs:
+  say-hi:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello from public actions"
